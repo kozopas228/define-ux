@@ -1,0 +1,15 @@
+.criteria_value {
+
+}
+.criteria_value:last-child {
+
+}
+
+.criteria_value input[type="text"] {
+    width: 100%;
+    border: none;
+    text-align: center;
+    text-wrap: normal;
+    color: inherit;
+    font: inherit;
+}

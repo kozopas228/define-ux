@@ -1,0 +1,131 @@
+.table_container {
+    border: 1px solid var(--gray-500);
+    border-radius: 16px;
+    overflow-x: auto;
+    /*width: 100%;*/
+    width: 960px;
+    position: relative;
+    box-sizing: border-box;
+}
+.table_container::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+.table_container::-webkit-scrollbar-track {
+
+}
+
+.table_container::-webkit-scrollbar-thumb {
+    background: var(--gray-700);
+    border-radius: 10px;
+}
+.table_container::-webkit-scrollbar-thumb:hover {
+    background: var(--gray-800);
+}
+
+.table {
+    /* box-shadow and borders will not work with positon: sticky otherwise */
+    border-collapse: separate !important;
+    border-spacing: 0;
+    box-sizing: border-box;
+    overflow: auto;
+    width: 100%;
+}
+
+.header_item {
+    background-color: var(--gray-700);
+    border-bottom: 1px solid lightgray;
+    padding: 16px 0;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.header_row {
+
+}
+.header_row_number {
+    min-width: 64px;
+    position: sticky;
+    left: 0;
+    border-left: none;
+    border-right: 4px solid var(--gray-200);
+
+    z-index: 2;
+}
+.header_competitor_name {
+    position: sticky;
+    left: 64px;
+    margin-right: 64px;
+
+    z-index: 2;
+}
+.header_competitor_name>div:last-child {
+
+}
+.header_delete_button {
+    background-color: white;
+    min-width: 64px;
+    position: sticky;
+    right: 0;
+    border-left: 1px solid var(--gray-500);
+
+    z-index: 4;
+}
+
+.td {
+    background-color: white;
+    padding: 12px 12px;
+    box-sizing: border-box;
+    text-align: center;
+    border-right: 1px solid var(--gray-500);
+    border-bottom: 1px solid var(--gray-500);
+    vertical-align: middle;
+    word-break: break-word;
+    position: relative;
+}
+.td:nth-last-child(2), .td:nth-last-child(1) {
+    border-right: none;
+}
+.td:nth-child(2) {
+    margin-right: 64px;
+}
+
+@media (max-width: 1319px) {
+    .table_container {
+        width: 800px;
+    }
+}
+@media (max-width: 1139px) {
+    .table_container {
+        width: 680px;
+    }
+}
+@media (max-width: 959px) {
+    .table_container {
+        width: 76vw;
+    }
+
+    .header_row_number {
+        min-width: 32px;
+    }
+
+    .header_competitor_name {
+        left: 32px;
+        margin-right: 32px;
+    }
+
+    .td:nth-child(2) {
+        margin-right: 32px;
+    }
+
+    .header_delete_button {
+        min-width: 32px;
+    }
+
+}
+@media (max-width: 719px) {
+
+}
+

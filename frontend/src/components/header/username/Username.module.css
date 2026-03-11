@@ -1,0 +1,55 @@
+.username {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.tick_down_icon {
+    width: 17px;
+    height: 17px;
+    filter: invert(10%) sepia(9%) saturate(2359%) hue-rotate(183deg) brightness(93%) contrast(89%);
+    transition-duration: 300ms;
+    margin-left: 4px;
+}
+.tick_down_icon.active {
+    transform: rotate(180deg);
+}
+
+.content {
+    border: 1px solid var(--gray-500);
+    border-radius: 12px;
+    position: absolute;
+    top: 150%;
+    left: 0;
+    display: none;
+    background: white;
+    overflow: hidden;
+}
+.content.active {
+    display: inline-block;
+}
+
+.menu_item {
+    display: flex;
+    align-items: center;
+    padding: 12px 12px 10px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.menu_item:last-child {
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+.menu_icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+    filter: invert(10%) sepia(9%) saturate(2359%) hue-rotate(183deg) brightness(93%) contrast(89%);
+}
+
+.menu_item:hover {
+    background-color: var(--gray-350);
+}
+

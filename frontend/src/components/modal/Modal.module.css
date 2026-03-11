@@ -1,0 +1,35 @@
+.modal_wrapper {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition-duration: 300ms;
+    z-index: 999;
+}
+
+.modal_wrapper.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal_wrapper.open .modal_content {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.modal_content {
+    position: relative;
+    opacity: 0;
+    transform: translateY(-200px);
+    transition-duration: 300ms;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-color: white;
+}

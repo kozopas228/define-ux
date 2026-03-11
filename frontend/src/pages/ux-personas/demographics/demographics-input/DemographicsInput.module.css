@@ -1,0 +1,35 @@
+.demographics_input {
+    margin-top: 12px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.demographics_input input {
+    box-sizing: border-box;
+    padding: 9px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--gray-200);
+    outline: none;
+    flex-grow: 1;
+}
+
+.demographics_input input::placeholder {
+    color: var(--gray-700);
+}
+
+.demographics_input_close {
+    position: initial;
+    transform: initial;
+    margin-left: 12px;
+}
+
+
+.demographics_input.disabled input{
+    background-color: var(--gray-100);
+}
+
+.demographics_input.disabled input::placeholder {
+    color: var(--gray-500);
+}

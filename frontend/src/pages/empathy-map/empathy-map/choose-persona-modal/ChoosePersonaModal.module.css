@@ -1,0 +1,147 @@
+.modal_initial {
+    max-height: 525px;
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.create_new_persona_button {
+    width: 100%;
+}
+
+.create_new_persona_input {
+    width: 100%;
+}
+
+.persona_images {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.persona_images img {
+    width: 92px;
+    height: 92px;
+    cursor: pointer;
+    border: 1px solid var(--gray-500);
+    border-radius: 16px;
+}
+
+.create_new_persona_modal {
+    width: 264px;
+    padding: 16px 20px;
+}
+
+.create_new_persona_photo {
+    margin-top: 12px;
+    height: 88px;
+    background-color: var(--gray-200);
+    border-radius: 12px;
+    border: 1px solid var(--gray-500);
+    position: relative;
+    cursor: pointer;
+    transition-duration: 200ms;
+    overflow: hidden;
+    text-align: center;
+}
+.create_new_persona_photo:hover {
+    background-color: var(--gray-350);
+}
+
+.create_new_persona_photo svg {
+    filter: var(--filter-gray-300);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.create_new_persona_photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.choose_photo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.create_new_persona_create_button {
+    width: 100%;
+    margin-top: 32px;
+}
+
+
+
+
+
+.choose_photo_modal {
+    padding: 16px 20px;
+    height: 494px;
+    overflow-y: hidden;
+}
+
+.choose_photo_modal .upload_button {
+    width: 294px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.choose_photo_modal .upload_button svg {
+    width: 16px;
+    height: 16px;
+    filter: var(--filter-white);
+    margin-left: 10px;
+}
+
+.choose_photo_modal .photos {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 400px;
+}
+
+.choose_photo_modal .persona_photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 12px;
+    border: 1px solid var(--gray-500);
+    cursor: pointer;
+}
+
+.choose_photo_modal .persona_photo:hover img {
+}
+
+.choose_photo_modal .file_uploader {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+@media (max-width: 959px) {
+    .choose_photo_modal .photos {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+

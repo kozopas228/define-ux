@@ -1,0 +1,22 @@
+.delete_project_content {
+    width: 361px;
+    padding: 24px 22px;
+}
+
+.delete_project_content p {
+    margin-bottom: 20px;
+}
+
+.delete_project_content h4 {
+    margin-bottom: 64px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 28px;
+}
+
+.buttons button:first-child {
+    margin-right: 16px;
+}

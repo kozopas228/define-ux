@@ -1,0 +1,39 @@
+.content {
+
+}
+.table_and_new_column_button {
+    display: flex;
+}
+
+.table_and_new_column_button button {
+    margin-left: 28px;
+}
+
+.new_row_button {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+
+}
+.new_row_button button {
+    width: 400px;
+}
+
+.spinner svg {
+    width: 32px;
+    height: 32px;
+    filter: var(--filter-gray-700);
+}
+
+@media (max-width: 959px) {
+    .table_and_new_column_button button {
+        margin-left: 12px;
+    }
+
+    .new_row_button button {
+        width: 32%;
+    }
+
+}
+
+

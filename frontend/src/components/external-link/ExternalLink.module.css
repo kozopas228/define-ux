@@ -1,0 +1,12 @@
+.external_link {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.external_link a {
+    margin-right: 16px;
+}
+
+.external_link svg {
+    filter: var(--filter-blue-700);
+}

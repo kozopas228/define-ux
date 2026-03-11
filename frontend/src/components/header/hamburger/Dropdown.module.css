@@ -1,0 +1,61 @@
+.hamburger_dropdown {
+    border-radius: 12px;
+    background-color: var(--dark-900);
+    position: relative;
+    padding: 12px 16px;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading {
+    display: flex;
+}
+
+.heading .globe_icon {
+    filter: var(--filter-white);
+    width: 19px;
+    height: 19px;
+    margin-right: 16px;
+}
+
+.body {
+    visibility: hidden;
+    position: absolute;
+}
+.body.active {
+    visibility: visible;
+    position: relative;
+}
+
+.tick_down_icon {
+    filter: var(--filter-white);
+    width: 22px;
+    height: 22px;
+}
+.tick_down_icon.active {
+    transform: rotate(180deg);
+}
+
+.body_item {
+    display: flex;
+    margin-top: 16px;
+}
+
+.body_item img, .body_item svg {
+    width: 19px;
+    height: 19px;
+    margin-right: 16px;
+}
+
+.body_item svg {
+    filter: var(--filter-white);
+}
+
+.nav_link {
+    text-decoration: none;
+}

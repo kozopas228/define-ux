@@ -1,0 +1,13 @@
+.motivations {
+    padding: 12px 20px;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 1px solid var(--gray-500);
+    display: block;
+}
+
+.add_new_button {
+    width: 100%;
+    margin-top: 40px;
+}

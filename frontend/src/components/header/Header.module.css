@@ -1,0 +1,49 @@
+.wrapper {
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    z-index: 999;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo_big {
+    width: 169px;
+    height: 39px;
+}
+
+.logo_small {
+    width: 129px;
+    height: 29px;
+}
+
+.logo_small_nav_link {
+    display: flex;
+    alignItems: center;
+}
+
+.logo_and_projects {
+    display: flex;
+    align-items: center;
+}
+
+.nav_link {
+    margin-left: 48px;
+    text-decoration: none;
+}
+
+.language_and_user {
+    display: flex;
+    align-items: center;
+}
+
+.sign_in {
+
+}

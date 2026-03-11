@@ -1,0 +1,44 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "overrides": [
+    ],
+    "ignorePatterns": [
+        "node_modules/",
+        "dist/"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "react-hooks",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "prettier/prettier": "warn",
+        "@typescript-eslint/no-unused-vars": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "semi": ["error", "always"],
+//        "no-console": "warn", // UNCOMMENT WHEN NEEDED
+        "prefer-const": "error",
+        "max-len": ["error", {"code":  120}],
+        "jsx-quotes": ["error", "prefer-single"]
+//        "quotes": ["warn", "single"], // replaced by prettier
+//        "indent": ["warn", 4], // replaced by prettier
+//        "array-bracket-newline": ["error", { "minItems": 4 }], // replaced by prettier
+//        "object-curly-spacing": ["error", "always"], // // replaced by prettier
+//        "arrow-parens": "error", // // replaced by prettier
+    }
+}

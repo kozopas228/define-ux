@@ -1,0 +1,60 @@
+.site-card {
+    display: flex;
+    width: 306px;
+    padding: 10px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0 0 21.9px 1px rgba(0, 0, 0, 0.25);
+    position: absolute;
+}
+
+.active {
+    outline: 8px solid #094DFC;
+}
+
+.heading {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-bottom: 3px solid #300195;
+    color: #300195;
+    font-family: Lobster, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: grab;
+}
+
+.heading:hover {
+    background-color: #d3d3d3;
+}
+
+.content {
+    display: flex;
+    padding: 4px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footer svg {
+    width: 92px;
+    height: 82px;
+    stroke-width: 4px;
+    stroke: #1400FF;
+}

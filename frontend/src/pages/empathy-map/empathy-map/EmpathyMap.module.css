@@ -1,0 +1,7 @@
+.empathy_map {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+

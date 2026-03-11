@@ -1,0 +1,62 @@
+.change_language {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 1px 9px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 64px;
+}
+
+.globe_icon {
+    width: 24px;
+    height: 24px;
+    filter: var(--filter-dark-900);
+    margin-bottom: 8px;
+}
+
+.language_tick {
+    display: flex;
+    align-items: center;
+}
+
+.tick_down_icon {
+    width: 17px;
+    height: 17px;
+    filter: var(--filter-dark-900);
+    transition-duration: 300ms;
+}
+.tick_down_icon.active {
+    transform: rotate(180deg);
+}
+
+.content {
+    border: 1px solid var(--gray-500);
+    border-radius: 12px;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    display: none;
+    background: white;
+    overflow: hidden;
+
+}
+.content.active {
+    display: block;
+}
+
+.language_item {
+    display: flex;
+    align-items: center;
+    padding: 12px 12px 10px;
+}
+.language_item:last-child {
+    padding-top: 10px;
+}
+.language_item .flag {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+.language_item:hover {
+    background-color: var(--gray-350);
+}

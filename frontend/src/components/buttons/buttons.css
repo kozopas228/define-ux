@@ -1,0 +1,98 @@
+.button {
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition-duration: 100ms;
+    padding: 9px 18px;
+
+}
+
+.button-primary, .button-primary-lg {
+    background-color: var(--blue-500);
+    color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 48, 194, 0.25);
+}
+.button-primary:hover, .button-primary-lg:hover {
+    background-color: var(--blue-600);
+}
+
+.button-primary-disabled, .button-primary-lg-disabled  {
+    background-color: var(--blue-300);
+    color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 48, 194, 0.25);
+    cursor: default;
+}
+
+.button-primary-outline, .button-primary-outline-lg {
+    background-color: transparent;
+    color: var(--blue-700);
+    border: 1px solid var(--blue-500);
+}
+.button-primary-outline:hover, .button-primary-outline-lg:hover {
+    background-color: var(--blue-500);
+    color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 48, 194, 0.25);
+}
+
+.button-secondary {
+    color: var(--dark-900);
+    background-color: var(--gray-200);
+}
+.button-secondary:hover {
+    background-color: var(--gray-400);
+}
+.button-secondary-disabled {
+    color: var(--gray-500);
+}
+
+.button-secondary-outline {
+    background-color: transparent;
+    border: 1px solid var(--gray-500);
+    color: var(--gray-700);
+}
+.button-secondary-outline:hover {
+    background-color: var(--gray-200);
+    color: var(--gray-800);
+}
+
+.button-secondary-outline-disabled {
+    background-color: transparent;
+    color: var(--gray-500);
+    border: 1px solid var(--gray-350);
+    cursor: default;
+}
+
+.button-outline-danger, .button-outline-danger-lg {
+    background-color: transparent;
+    border: 1px solid var(--sinopia-600);
+    color: var(--sinopia-600);
+}
+.button-outline-danger:hover, .button-outline-danger-lg:hover {
+    color: white;
+    background-color: var(--sinopia-600);;
+}
+
+.button-outline-danger-lg {
+    border-width: 2px;
+}
+
+.button-gradient-xlg {
+    padding: 12px 24px;
+    background: linear-gradient(white, white) padding-box, var(--gradient-red-blue) border-box;
+    border: 4px solid transparent;
+}
+.button-gradient-xlg:hover {
+    color: white;
+    background: var(--gradient-red-blue) border-box;
+}
+.button-gradient-xlg:hover .gradient-xlg-text {
+    -webkit-text-fill-color: white;
+    -moz-text-fill-color: white;
+}
+.gradient-xlg-text {
+    background-image: var(--gradient-red-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}

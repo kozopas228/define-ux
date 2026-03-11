@@ -1,0 +1,47 @@
+.project_description_input {
+    position: relative;
+    box-sizing: content-box;
+    width: 100%;
+    padding: 20px 32px;
+    border-radius: 20px;
+}
+.project_description_input:hover {
+    background-color: var(--gray-200);
+}
+.project_description_input textarea {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    resize: none;
+    height: 88px;
+}
+.project_description_input svg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(50%);
+    width: 32px;
+    height: 32px;
+    filter: var(--filter-gray-500);
+}
+
+.project_description_input:hover svg {
+    filter: var(--filter-dark-900);
+}
+
+.project_description_input textarea::placeholder {
+    color: var(--gray-500);
+}
+
+@media (max-width: 959px) {
+    .project_description_input {
+        width: 100%;
+        padding: 8px 8px;
+    }
+
+    .project_description_input svg {
+        width: 24px;
+        height: 24px;
+    }
+}

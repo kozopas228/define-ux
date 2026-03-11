@@ -1,0 +1,39 @@
+.change_project_content {
+    width: 451px;
+    padding: 24px 22px;
+}
+
+.input_item {
+    width: 100%;
+}
+.input_item:first-child {
+    margin-bottom: 32px;
+
+}
+
+.input_item input {
+    margin-top: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input_item textarea {
+    margin-top: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 170px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 28px;
+}
+
+.buttons button:first-child {
+    margin-right: 16px;
+}
+
+.validation_errors {
+    margin-top: 28px;
+}

@@ -1,0 +1,151 @@
+.sample {
+    margin-top: 108px;
+}
+.sample_image {
+    border-radius: 14px;
+    height: 331px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.sample_image h3 {
+    position: absolute;
+}
+.sample_content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sample_content_text {
+
+}
+.sample_content_text p {
+    margin-top: 20px;
+}
+.sample_content_disabled {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.sample_ux_persona {
+    margin-top: 158px;
+}
+.sample_ux_persona .sample_image img {
+    width: 335px;
+}
+.sample_empathy_map .sample_image img {
+    width: 354px;
+}
+.sample_competitor_analysis .sample_image img {
+    width: 382px;
+}
+.sample_sitemap .sample_image img {
+    width: 382px;
+}
+.sample_cjm .sample_image img {
+    width: 382px;
+}
+.sample_user_flow .sample_image img {
+    width: 382px;
+}
+
+@media (min-width: 1140px) and (max-width: 1319px) {
+    .sample_ux_persona .sample_image img {
+        width: 335px;
+    }
+    .sample_empathy_map .sample_image img {
+        width: 324px;
+    }
+    .sample_competitor_analysis .sample_image img {
+        width: 332px;
+    }
+    .sample_sitemap .sample_image img {
+        width: 332px;
+    }
+    .sample_cjm .sample_image img {
+        width: 332px;
+    }
+    .sample_user_flow .sample_image img {
+        width: 332px;
+    }
+}
+@media (min-width: 960px) and (max-width: 1139px) {
+    .sample_ux_persona .sample_image img {
+        width: 285px;
+    }
+    .sample_empathy_map .sample_image img {
+        width: 274px;
+    }
+    .sample_competitor_analysis .sample_image img {
+        width: 280px;
+    }
+    .sample_sitemap .sample_image img {
+        width: 280px;
+    }
+    .sample_cjm .sample_image img {
+        width: 280px;
+    }
+    .sample_user_flow .sample_image img {
+        width: 280px;
+    }
+}
+
+@media (max-width: 959px) {
+    .sample {
+        margin-top: 100px;
+    }
+    .sample_image {
+        height: 331px;
+        width: 100%;
+    }
+    .sample_image h3 {
+        position: absolute;
+    }
+    .sample_content {
+        text-align: center;
+    }
+    .sample_content h4 {
+        margin-top: 40px;
+    }
+    .sample_content p {
+        margin-top: 20px;
+        text-align: start;
+    }
+    .sample_content_button {
+        margin-top: 28px;
+    }
+    .sample_content_button button {
+        width: 100%;
+    }
+    .sample_content_text {
+
+    }
+    .sample_content_text p {
+        margin-top: 20px;
+    }
+    .sample_content_disabled {
+        justify-content: center;
+    }
+    .sample_content_disabled button {
+        width: 100%;
+        margin-top: 28px;
+    }
+    .sample_content_disabled span {
+        margin-top: 24px;
+    }
+
+    .sample_ux_persona {
+        margin-top: 104px;
+    }
+    .sample_ux_persona .sample_image img, .sample_empathy_map .sample_image img,
+    .sample_competitor_analysis .sample_image img, .sample_sitemap .sample_image img,
+    .sample_cjm .sample_image img, .sample_user_flow .sample_image img  {
+        width: 90%;
+    }
+}

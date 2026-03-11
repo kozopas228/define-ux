@@ -1,0 +1,96 @@
+service: define-ux # <change> this to yours
+org: your-org-name # <change> this to yours
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  region: eu-central-1
+  tags:
+    app: Define UX # tag for AWS billing
+  environment: # each env variable from .env.[stage] must be present here also with value like ${env:VAR_NAME_FROM_DOTENV}
+    NODE_ENV: ${sls:stage}
+    FRONTEND_URL: ${env:FRONTEND_URL}
+    AWS_APP_REGION: ${aws:region} # the name contains APP because AWS_REGION is reserved
+    AWS_DYNAMODB_TABLE: define_ux_table
+    AWS_DYNAMODB_BATCH_SIZE: ${env:AWS_DYNAMODB_BATCH_SIZE}
+    AWS_S3_BUCKET: define-ux
+    AWS_S3_SIGNED_URL_TTL: ${env:AWS_S3_SIGNED_URL_TTL}
+    AWS_SES_EMAIL_FROM: ${env:AWS_SES_EMAIL_FROM}
+    JWT_ACCESS_SECRET: ${env:JWT_ACCESS_SECRET}
+    JWT_ACCESS_TTL: ${env:JWT_ACCESS_TTL}
+    JWT_REFRESH_SECRET: ${env:JWT_REFRESH_SECRET}
+    JWT_REFRESH_TTL: ${env:JWT_REFRESH_TTL}
+    JWT_RESET_PASSWORD_SECRET: ${env:JWT_RESET_PASSWORD_SECRET}
+    JWT_RESET_PASSWORD_TTL: ${env:JWT_RESET_PASSWORD_TTL}
+    REFRESH_COOKIE_NAME: ${env:REFRESH_COOKIE_NAME}
+    REFRESH_COOKIE_SECRET: ${env:REFRESH_COOKIE_SECRET}
+    GOOGLE_CLIENT_ID: ${env:GOOGLE_CLIENT_ID}
+    GOOGLE_CLIENT_SECRET: ${env:GOOGLE_CLIENT_SECRET}
+    GOOGLE_OAUTH_URL: ${env:GOOGLE_OAUTH_URL}
+    GOOGLE_ACCESS_TOKEN_URL: ${env:GOOGLE_ACCESS_TOKEN_URL}
+    GOOGLE_TOKEN_INFO_URL: ${env:GOOGLE_TOKEN_INFO_URL}
+    THROTTLE_TTL: ${env:THROTTLE_TTL}
+    THROTTLE_LIMIT: ${env:THROTTLE_LIMIT}
+  httpApi: # CORS settings
+    metrics: false
+    useProviderTags: true
+    cors:
+      allowedOrigins:
+        - ${env:FRONTEND_URL}
+      allowedHeaders:
+        - Content-Type
+        - Authorization
+        - Accept
+        - X-Requested-With
+        - Origin
+        - Referer
+        - Cache-Control
+        - rid
+        - fdi-version
+        - anti-csrf
+        - st-auth-mode
+      allowedMethods:
+        - '*'
+      allowCredentials: true
+      exposedResponseHeaders:
+        - '*'
+      maxAge: 6000 # In seconds
+  iam: # role for lambda that gives access to DynamoDB, S3
+    role:
+      name: ${self:service}-lambda-role
+      statements:
+        - Effect: 'Allow'
+          Action: '*'
+          Resource:
+            - 'arn:aws:dynamodb:${aws:region}:${aws:accountId}:table/define_ux_table'
+            - 'arn:aws:dynamodb:${aws:region}:${aws:accountId}:table/define_ux_table/index/*'
+        - Effect: 'Allow'
+          Action: '*'
+          Resource:
+            - 'arn:aws:s3:::define-ux'
+            - 'arn:aws:s3:::define-ux/*'
+# by default stages are called prod and dev, the line below changes them to production and development
+stages:
+  development:
+    params:
+      some_var: 1000
+  production:
+    params:
+      some_var: 30
+
+package:
+  exclude:
+    - node_modules/**
+
+functions:
+  main:
+    handler: dist/main.handler
+    events:
+      - httpApi: "*"
+
+custom:
+  serverless-offline:
+    httpPort: 3001

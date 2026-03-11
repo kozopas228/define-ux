@@ -1,0 +1,13 @@
+.resizer {
+    background: var(--gray-200);
+    cursor: col-resize;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    touch-action: none;
+    user-select: none;
+    width: 4px;
+    box-sizing: border-box;
+}
+

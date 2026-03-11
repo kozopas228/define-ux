@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /profile
+Disallow: /project/
+Disallow: /projects
+Disallow: /empathymap/:PK/:SK
+Disallow: /competitoranalysis/:PK/:SK
+Disallow: /uxpersonas/:PK/:SK
+Disallow: /passwordReset
+
+Allow: /
+
+Sitemap: https://define-ux.com/sitemap.xml

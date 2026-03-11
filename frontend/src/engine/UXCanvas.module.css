@@ -1,0 +1,14 @@
+.wrapper {
+    /*border: 10px solid indigo;*/
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.infinite-div {
+    /*opacity: 0.5;*/
+    background-color: lightyellow;
+    position: relative;
+}

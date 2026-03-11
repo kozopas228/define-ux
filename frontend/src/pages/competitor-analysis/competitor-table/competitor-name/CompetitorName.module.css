@@ -1,0 +1,22 @@
+.competitor_name {
+    position: sticky;
+    left: 64px;
+    z-index: 2;
+    box-shadow: -4px 0 4px -4px var(--gray-800) inset;
+}
+
+.competitor_name input {
+    width: 100%;
+    border: none;
+    text-align: center;
+    text-wrap: normal;
+    color: inherit;
+    font: inherit;
+}
+
+@media (max-width: 959px) {
+    .competitor_name {
+        left: 32px;
+    }
+
+}

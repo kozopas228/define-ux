@@ -1,0 +1,22 @@
+.biography {
+    width: 100%;
+    min-height: 300px;
+    background-color: var(--gray-200);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 9px 18px;
+    box-sizing: border-box;
+    height: auto;
+    resize: none;
+}
+
+.biography::placeholder {
+    color: var(--gray-700);
+}
+
+@media (max-width: 959px) {
+    .biography {
+        margin-top: 32px;
+    }
+}

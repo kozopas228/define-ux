@@ -1,0 +1,14 @@
+export const UX_CANVAS_WRAPPER_WIDTH = window.innerWidth;
+export const UX_CANVAS_WRAPPER_HEIGHT = window.innerHeight;
+export const UX_CANVAS_DIV_DEFAULT_WIDTH = 6000;
+export const UX_CANVAS_DIV_DEFAULT_HEIGHT = 6000;
+export const UX_CANVAS_DIV_DEFAULT_OFFSET_X = UX_CANVAS_DIV_DEFAULT_WIDTH / 2;
+export const UX_CANVAS_DIV_DEFAULT_OFFSET_Y = UX_CANVAS_DIV_DEFAULT_HEIGHT / 2;
+export const MAX_SCALE = 2;
+export const MIN_SCALE = 0.4;
+export const ARROW_Z_INDEX = 99999;
+export const MINIMAL_SHAPE_WIDTH = 50;
+export const MINIMAL_SHAPE_HEIGHT = 50;
+export const LEFT_MOUSE_BUTTON = 0;
+export const MIDDLE_MOUSE_BUTTON = 1;
+export const RIGHT_MOUSE_BUTTON = 2;

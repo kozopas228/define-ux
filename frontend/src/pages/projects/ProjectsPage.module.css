@@ -1,0 +1,60 @@
+.heading {
+    margin-top: 8px;
+}
+.heading_content {
+    display: flex;
+    justify-content: space-between;
+}
+.search_and_create {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search {
+    width: 240px;
+    margin-right: 24px;
+}
+
+.column_names {
+    margin-top: 54px;
+    margin-bottom: 14px;
+}
+
+.spinner {
+    display: flex;
+    justify-content: center;
+}
+
+.spinner svg {
+    width: 32px;
+    height: 32px;
+}
+
+@media (max-width: 959px) {
+    .heading {
+        margin-top: 8px;
+    }
+
+    .search_and_create {
+        margin-top: 36px;
+    }
+
+    .search {
+        width: 40%;
+        margin-right: 0;
+    }
+
+    .search_and_create a {
+        width: 55%;
+    }
+
+    .search_and_create .create_button {
+        width: 100%;
+    }
+
+    .projects {
+        margin-top: 48px;
+        margin-bottom: 42px;
+    }
+}
+

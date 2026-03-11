@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "commonjs", // modular system which will be used in project, needed when tsc used as compiler
+    "declaration": true,
+    "removeComments": true,
+    "esModuleInterop": true, // allows you to import CommonJS packages as ES6.
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021", // version of ECMAScript to which final bundle will be compiled, needed when tsc used as compiler
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true, // denies passing null or undefined as function arguments if it wasn't specified
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictBindCallApply": true,
+    "noPropertyAccessFromIndexSignature": false, // denies dot notation for objects with [] properties notation
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+  }
+}

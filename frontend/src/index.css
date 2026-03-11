@@ -1,0 +1,150 @@
+@import "./styles/reset.css";
+@import "./styles/grid.css";
+
+/* CSS Global Variables */
+:root {
+    /* colors */
+    --dark-800: #2E3849;
+    --dark-900: #1E2431;
+    --blue-300: #9DBEFF;
+    --blue-500: #367AFF;
+    --blue-600: #0254F3;
+    --blue-700: #034BD8;
+    --gray-100: #F7F7F9;
+    --gray-200: #F0F1F4;
+    --gray-300: #E6E8EC;
+    --gray-350: #DCDFE5;
+    --gray-400: #E1E1E1;
+    --gray-500: #B9BDCB;
+    --gray-600: #999FB3;
+    --gray-700: #727E95;
+    --gray-800: #46526B;
+    --sinopia-100: #FAE1DB;
+    --sinopia-300: #EC886F;
+    --sinopia-600: #C73C1A;
+    --green-100: #E9FAF2;
+    --green-500: #79E1B0;
+    --green-600: #41D48F;
+    --green-800: #177245;
+
+    /* gradients */
+    --gradient-red-blue: linear-gradient(90deg, #F44369, #3E3B92);
+    --gradient-red-blue-transparent: linear-gradient(90deg, rgba(244, 67, 105, 0.1), rgba(62, 59, 146, 0.1));
+
+    /* filters */
+    --filter-dark-900: invert(10%) sepia(9%) saturate(2359%) hue-rotate(183deg) brightness(93%) contrast(89%);
+    --filter-gray-800: invert(30%) sepia(15%) saturate(962%) hue-rotate(182deg) brightness(95%) contrast(87%);
+    --filter-gray-700: invert(49%) sepia(22%) saturate(390%) hue-rotate(181deg) brightness(95%) contrast(83%);
+    --filter-gray-600: invert(67%) sepia(10%) saturate(426%) hue-rotate(189deg) brightness(91%) contrast(98%);
+    --filter-gray-500: invert(86%) sepia(15%) saturate(179%) hue-rotate(189deg) brightness(86%) contrast(94%);
+    --filter-gray-300: invert(98%) sepia(2%) saturate(572%) hue-rotate(188deg) brightness(94%) contrast(96%);
+    --filter-blue-700: invert(17%) sepia(100%) saturate(4476%) hue-rotate(220deg) brightness(88%) contrast(98%);;
+    --filter-white: invert(100%) sepia(0%) saturate(2%) hue-rotate(179deg) brightness(106%) contrast(101%);
+    --filter-sinopia-600: invert(26%) sepia(32%) saturate(4417%) hue-rotate(352deg) brightness(100%) contrast(91%);
+
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+._lock {
+    overflow: hidden;
+}
+
+.outlet_wrapper {
+    margin-top: 141px;
+}
+
+@media (max-width: 959px) {
+    .outlet_wrapper {
+        margin-top: 109px;
+    }
+}
+
+/* fonts */
+@font-face {
+    font-family: "Open Sans";
+    src: url(./assets/fonts/Open_Sans/static/OpenSans-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url(./assets/fonts/Open_Sans/static/OpenSans-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url(./assets/fonts/Open_Sans/static/OpenSans-Bold.ttf);
+    font-weight: 700;
+}
+
+/* typography */
+.heading1 {
+    font: 600 64px 'Open Sans';
+}
+.heading2 {
+    font: 600 48px 'Open Sans';
+}
+.heading3 {
+    font: 600 32px 'Open Sans';
+}
+.heading4 {
+    font: 600 24px 'Open Sans';
+}
+.text-bigger-bold {
+    font: 700 20px 'Open Sans';
+}
+.text-bigger {
+    font: 400 20px 'Open Sans';
+}
+.text-big-bold {
+    font: 600 16px 'Open Sans';
+}
+.text-big {
+    font: 400 16px 'Open Sans';
+}
+.text-normal-bold {
+    font: 600 14px 'Open Sans';
+}
+.text-normal {
+    font: 400 14px 'Open Sans';
+}
+.text-small-bold {
+    font: 600 12px 'Open Sans';
+}
+.text-small {
+    font: 400 12px 'Open Sans';
+}
+
+.color-dark-900 {
+    color: var(--dark-900);
+}
+.color-dark-800 {
+    color: var(--dark-800);
+}
+.color-gray-800 {
+    color: var(--gray-800);
+}
+.color-gray-700 {
+    color: var(--gray-700);
+}
+.color-gray-600 {
+    color: var(--gray-600);
+}
+.color-blue-700 {
+    color: var(--blue-700);
+}
+.color-sinopia-600 {
+    color: var(--sinopia-600);
+}
+.color-white {
+    color: white;
+}
+
+/* shadows */
+.shadow1 {
+    box-shadow: 0 2px 10px 0 rgba(30, 36, 49, 0.25);
+}

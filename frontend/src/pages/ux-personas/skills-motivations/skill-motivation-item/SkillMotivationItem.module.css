@@ -1,0 +1,99 @@
+.skill_motivation_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputs {
+    margin-top: 28px;
+    position: relative;
+    flex-grow: 1;
+}
+.inputs:first-child {
+    margin-top: 12px;
+}
+
+.input_close_button {
+    position: initial;
+    transform: initial;
+    margin-left: 12px;
+}
+.skill_motivation_name {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: 8px;
+    height: 24px;
+    background-color: var(--gray-200);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 24px;
+    width: 24px;
+    background-color: var(--blue-500);
+    cursor: grab;
+    box-shadow: -800px 0 0 800px var(--blue-300);
+}
+
+.slider::-webkit-slider-thumb:hover {
+    background-color: var(--blue-700);
+}
+
+.slider::-moz-range-thumb {
+    border: none;
+    border-radius: 0;
+    height: 24px;
+    width: 24px;
+    background-color: var(--blue-500);
+    cursor: grab;
+}
+.slider::-moz-range-thumb:hover {
+    background-color: var(--blue-700);
+}
+.slider::-moz-range-progress {
+    background-color: var(--blue-300);
+    height: 100%;
+}
+
+
+.slider::-ms-fill-lower {
+    background-color: var(--blue-300);
+}
+
+.disabled .slider{
+    background-color: var(--gray-100);
+}
+.disabled .slider::-webkit-slider-thumb {
+    background-color: var(--gray-500)
+}
+.disabled .slider::-webkit-slider-thumb:hover {
+    background-color: var(--gray-500)
+}
+.disabled .slider::-moz-range-thumb {
+    background-color: var(--gray-500)
+}
+.disabled .slider::-moz-range-thumb:hover {
+    background-color: var(--gray-500)
+}
+
+.disabled .slider::-webkit-slider-thumb {
+    box-shadow: -800px 0 0 800px var(--gray-300);
+}
+.disabled .skill_motivation_name {
+    color: var(--gray-500);
+    background-color: var(--gray-100);
+}
+.disabled .skill_motivation_name::placeholder {
+    color: var(--gray-400);
+}
+.disabled .input_close_button {
+    visibility: hidden;
+}

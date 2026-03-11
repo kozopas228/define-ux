@@ -1,0 +1,69 @@
+.link {
+    display: flex;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 3px;
+    pointer-events: none;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.link.active {
+    pointer-events: all;
+}
+
+.type-external {
+    background-color: #FBC457;
+    color: black;
+}
+
+.type-external:hover {
+    background-color: #da9e2b;
+}
+
+.type-internal {
+    background-color: #0078CF;
+    color: white;
+}
+
+.type-internal:hover {
+    background-color: #025da2;
+}
+
+.type-login-or-register {
+    background-color: #0F9703;
+    color: white;
+}
+
+.type-login-or-register:hover {
+    background-color: #127e09;
+}
+
+.type-page-content {
+    background-color: transparent;
+    color: black;
+}
+
+.type-page-content:hover {
+    background-color: #c7c7c7;
+}
+
+.type-payed-stuff {
+    background-color: #E13922;
+    color: white;
+}
+
+.type-payed-stuff:hover {
+    background-color: #a61705;
+}
+
+
+
+

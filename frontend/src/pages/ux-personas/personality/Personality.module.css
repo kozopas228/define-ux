@@ -1,0 +1,8 @@
+.personality {
+    position: relative;
+    border-radius: 12px;
+    padding: 12px 20px;
+    border: 1px solid var(--gray-500);
+    margin-top: 32px;
+    display: block;
+}

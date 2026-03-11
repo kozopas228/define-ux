@@ -1,0 +1,22 @@
+.age_input {
+    box-sizing: border-box;
+    padding: 11px 18px;
+    width: 62px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--gray-200);
+    outline: none;
+}
+
+.age_input::placeholder {
+    color: var(--gray-700);
+}
+
+.age_input::-webkit-outer-spin-button,
+.age_input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.age_input[type=number] {
+    -moz-appearance: textfield;
+}

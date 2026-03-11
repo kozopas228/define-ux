@@ -1,0 +1,127 @@
+.input {
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+
+.text-field-secondary, .text-field-secondary-sm, .text-area-secondary, .text-field-danger {
+    padding: 9px 18px;
+    color: var(--dark-900);
+    background-color: var(--gray-200);
+    box-sizing: border-box;
+}
+.text-field-secondary::placeholder, .text-field-secondary-sm::placeholder, .text-area-secondary::placeholder, .text-field-danger::placeholder {
+    color: var(--gray-700);
+}
+.text-field-secondary-sm {
+    padding: 6px 12px;
+}
+
+.text-field-secondary-disabled {
+    padding: 9px 18px;
+    color: var(--gray-500);
+    background-color: var(--gray-100);
+}
+.text-field-secondary-disabled::placeholder {
+    color: var(--gray-500);
+}
+
+.search-field-secondary {
+    padding: 9px 16px;
+    height: 37px;
+    background-color: var(--gray-200);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.search-field-secondary > input {
+    color: var(--dark-900);
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+}
+.search-field-secondary > input::placeholder {
+    color: var(--gray-700);
+}
+.search-field-secondary-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+    filter: var(--filter-gray-700);
+}
+
+.text-area-secondary {
+    min-height: 22px;
+    resize: vertical;
+}
+
+.text-field-danger {
+    background-color: var(--sinopia-100);
+    border: 1px solid var(--sinopia-600);
+}
+
+.dropdown {
+    width: 100%;
+    border: 1px solid var(--gray-500);
+    appearance: none;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.dropdown select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    width: 100%;
+    outline: none;
+    cursor: inherit;
+    color: var(--dark-900);
+    padding: 9px 18px;
+}
+
+.dropdown select {
+    color: var(--dark-900);
+    font-size: 14px;
+}
+
+.dropdown_icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 12px;
+    top: 7px;
+    filter: var(--filter-dark-900);
+}
+
+.password-field-secondary, .password-field-danger {
+    padding: 9px 16px;
+    background-color: var(--gray-200);
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between;*/
+}
+.password-field-secondary > input, .password-field-danger > input{
+    color: var(--dark-900);
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-top: 0;
+    width: 100%;
+}
+.password-field-secondary > input::placeholder, .password-field-danger > input::placeholder {
+    color: var(--gray-700);
+}
+.password-field-secondary-icon, .password-field-danger-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 12px;
+    filter: var(--filter-gray-700);
+}
+
+.password-field-danger {
+    background-color: var(--sinopia-100);
+    border: 1px solid var(--sinopia-600);
+}

@@ -1,0 +1,16 @@
+.zoom-container {
+    width: 300px;
+    /*height: 100px;*/
+    background-color: rgba(101, 101, 101, 0.76);
+    color: white;
+    position: absolute;
+    border-top-left-radius: 10px;
+    padding: 10px;
+}
+
+.zoom-data {
+    display: block;
+    font-family: 'Inconsolata';
+    font-size: 20px;
+    margin-bottom: 10px;
+}

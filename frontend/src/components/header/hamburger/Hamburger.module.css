@@ -1,0 +1,84 @@
+.burger_icon {
+    display: block;
+    position: relative;
+    width: 32px;
+    height: 20px;
+    cursor: pointer;
+}
+.burger_icon::after,
+.burger_icon::before,
+.burger_icon span {
+    height: 15%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    transition-duration: 300ms;
+    background-color: var(--gray-800);
+    border-radius: 100px;
+}
+.burger_icon::after,
+.burger_icon::before {
+    content: " ";
+}
+.burger_icon::before {
+    top: 0;
+}
+.burger_icon::after {
+    bottom: 0;
+}
+.burger_icon span {
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.burger_icon.active span {
+    transform: scale(0);
+}
+.burger_icon.active::before {
+    top: 50%;
+    transform: translate(0, -50%) rotate(-45deg);
+}
+.burger_icon.active::after {
+    bottom: 50%;
+    transform: translate(0, 50%) rotate(45deg);
+}
+
+.wrapper {
+    /* overflow auto - we have to allow user to scroll the menu, and not the entire page */
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+
+    /* top == height of header container */
+    top: 109px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition-duration: 300ms;
+
+    /* firstly, when burger is not active, the menu is not visible (it is far away in left) */
+    right: -100%;
+}
+/* when burger is on active position - move the menu to the center */
+.wrapper.active {
+    right: 0;
+}
+
+.change_language {
+    margin-top: 24px;
+}
+
+.sign_up {
+    margin-top: 26px;
+}
+
+.sign_up button {
+    width: 100%;
+}
+
+.projects {
+    margin-top: 16px;
+}
+
+.username {
+    margin-top: 36px;
+}
+

@@ -1,0 +1,26 @@
+.delete_account_modal {
+    box-sizing: border-box;
+    padding: 24px;
+    width: 361px;
+    height: 239px;
+    position: relative;
+    text-align: center;
+}
+
+.delete_account_modal {
+
+}
+
+.delete_account_modal p {
+    margin-top: 24px;
+}
+
+.buttons {
+    margin-top: 67px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttons button:first-child {
+    margin-right: 16px;
+}

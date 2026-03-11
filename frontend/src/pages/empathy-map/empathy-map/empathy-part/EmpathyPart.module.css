@@ -1,0 +1,68 @@
+.empathy_part {
+    height: 314px;
+    border: 1px solid var(--gray-500);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.heading {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.content {
+    margin-top: 28px;
+    position: relative;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.content textarea {
+    width: calc(100% - 96px);
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    box-sizing: border-box;
+    resize: none;
+    line-height: 24px;
+}
+
+.content textarea::placeholder {
+    color: var(--gray-600);
+}
+
+.top_left {
+    border-top-left-radius: 16px;
+}
+
+.top_right {
+    border-top-right-radius: 16px;
+    border-left: none;
+}
+
+.bottom_left {
+    border-top: none;
+    border-bottom-left-radius: 16px;
+}
+
+.bottom_right {
+    border-bottom-right-radius: 16px;
+    border-top: none;
+    border-left: none;
+}
+
+.top_right .content textarea, .bottom_right .content textarea{
+    position: absolute;
+    right: 0;
+}
+
+
+@media (max-width: 959px) {
+    .content textarea {
+        width: calc(100% - 54px);
+    }
+
+}

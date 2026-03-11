@@ -1,0 +1,55 @@
+.persona_photo {
+    height: 260px;
+    background-color: var(--gray-200);
+    border-radius: 12px;
+    border: 1px solid var(--gray-500);
+    position: relative;
+    cursor: pointer;
+    transition-duration: 200ms;
+    overflow: hidden;
+    text-align: center;
+}
+.persona_photo:hover {
+    background-color: var(--gray-350);
+}
+
+.persona_photo svg {
+    filter: var(--filter-gray-300);
+    width: 181px;
+    height: 181px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.persona_photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.choose_photo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.photo_cover {
+    position: absolute;
+    background-color: var(--dark-900);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.photo_cover:hover{
+    opacity: 0.3;
+}
+
+#persona_export_photo_not_shown {
+    /*display: none;*/
+}

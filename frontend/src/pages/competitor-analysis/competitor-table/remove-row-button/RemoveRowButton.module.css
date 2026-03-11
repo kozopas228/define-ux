@@ -1,0 +1,35 @@
+.remove_row_button {
+    min-width: 60px;
+    position: sticky;
+    right: 0;
+    border-left: 1px solid var(--gray-500);
+    z-index: 5;
+    box-shadow: 4px 0 4px -4px var(--gray-800) inset;
+}
+
+.remove_row_button svg {
+    width: 24px;
+    height: 24px;
+    filter: var(--filter-gray-500);
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.remove_row_button svg:hover {
+    filter: var(--filter-gray-700);
+}
+
+@media (max-width: 959px) {
+    .remove_row_button {
+        min-width: 30px;
+    }
+
+    .remove_row_button svg {
+        width: 20px;
+        height: 20px;
+    }
+
+}
+

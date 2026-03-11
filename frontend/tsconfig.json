@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+//    "module": "ES6", // modular system which will be used in project, needed when tsc used as compiler (in our case it is babel)
+//    "target": "ES6", // version of ECMAScript to which final bundle will be compiled, needed when tsc used as compiler (in our case it is babel)
+    "lib": [ // which ES version syntax is used, also including DOM and other
+      "ESNext",
+      "DOM",
+    ],
+//    "outDir": "./dist/", // needed when tsc used as compiler (in our case it is babel)
+    "esModuleInterop": true, // allows you to import CommonJS packages as ES6.
+//    "allowSyntheticDefaultImports": true, // creates default imports from CommonJS packages if they don't have it. BUT it is turned on by default if "esModuleInterop" set to true
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+//    "alwaysStrict": true, // needed when tsc used as compiler (in our case it is babel)
+    "noImplicitAny": true,
+    "strictNullChecks": true, // denies passing null or undefined as function arguments if it wasn't specified
+    "strictPropertyInitialization": true, // makes sure that the declared properties of the class are always initialized
+    "noImplicitThis": true,
+    "strictBindCallApply": true,
+    "noPropertyAccessFromIndexSignature": false, // denies dot notation for objects with [] properties notation
+    "sourceMap": true,
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "nodenext",
+    "baseUrl": ".",
+//    "paths": { // uncomment if there is no npm packages starting with "@"
+//      "@/*": ["./src/*"]
+//    }
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}

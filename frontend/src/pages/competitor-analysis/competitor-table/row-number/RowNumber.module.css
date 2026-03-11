@@ -1,0 +1,16 @@
+.row_number {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    min-width: 64px;
+}
+
+.row_number h4 {
+}
+
+@media (max-width: 959px) {
+    .row_number {
+        min-width: 32px;
+    }
+
+}

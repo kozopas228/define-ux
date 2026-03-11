@@ -1,0 +1,49 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.persona_col_3 {
+    width: 306px;
+}
+
+.persona_col_4 {
+    width: 416px;
+}
+
+.persona_col_m {
+    width: 100%;
+}
+
+.spinner svg {
+    width: 32px;
+    height: 32px;
+    filter: var(--filter-gray-700);
+}
+
+@media (max-width: 1319px) {
+    .persona_col_3 {
+        width: 276px;
+    }
+
+    .persona_col_4 {
+        width: 340px;
+    }
+}
+
+@media (max-width: 1139px) {
+    .persona_col_3 {
+        width: 226px;
+    }
+
+    .persona_col_4 {
+        width: 286px;
+    }
+
+}
+@media (max-width: 959px) {
+
+}
+@media (max-width: 719px) {
+
+}

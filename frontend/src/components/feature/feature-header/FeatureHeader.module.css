@@ -1,0 +1,85 @@
+.project_name {
+    cursor: pointer;
+    margin-bottom: 54px;
+}
+.project_type {
+    /*margin-top: 54px;*/
+}
+.project_name_input {
+    margin-top: 20px;
+}
+.buttons {
+    margin-top: 44px;
+    margin-bottom: 40px;
+    display: flex;
+}
+.save_button button {
+    width: 196px;
+}
+.save_button {
+    margin-right: 24px;
+}
+.export_button {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 24px;
+}
+.export_button svg {
+    margin-left: 10px;
+    filter: var(--filter-dark-900);
+}
+
+.delete_button {
+    margin-right: 24px;
+    padding: 6px 15px;
+    box-sizing: border-box;
+}
+.delete_button svg{
+    filter: var(--filter-sinopia-600);
+    width: 20px;
+    height: 20px;
+}
+
+.delete_button:hover svg {
+    filter: var(--filter-white);
+}
+
+.unsaved_text {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 959px) {
+    .project_name {
+        cursor: pointer;
+        margin-bottom: 32px;
+    }
+
+    .project_type {
+        /*margin-top: 32px;*/
+    }
+
+    .buttons {
+        margin-top: 28px;
+        margin-bottom: 80px;
+        display: flex;
+    }
+    .save_button button {
+        width: 120px;
+    }
+    .save_button {
+        margin-right: 24px;
+    }
+    .export_button {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .buttons_top_mobile {
+        display: flex;
+        margin-top: 24px;
+    }
+}
+

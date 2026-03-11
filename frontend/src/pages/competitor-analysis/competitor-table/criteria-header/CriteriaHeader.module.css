@@ -1,0 +1,9 @@
+.header_criteria {
+    word-break: break-word;
+}
+
+.header_criteria_input {
+    width: 90%;
+    border: none;
+    text-align: center;
+}

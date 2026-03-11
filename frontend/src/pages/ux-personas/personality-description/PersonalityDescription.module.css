@@ -1,0 +1,27 @@
+.personality_description {
+    margin-top: 32px;
+    position: relative;
+    display: block;
+}
+
+.personality_description input {
+    box-sizing: border-box;
+    padding: 11px 18px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--gray-200);
+    outline: none;
+}
+
+.personality_description input::placeholder {
+    color: var(--gray-700);
+}
+
+.personality_description.disabled input{
+    background-color: var(--gray-100);
+}
+
+.personality_description.disabled input::placeholder {
+    color: var(--gray-500);
+}
